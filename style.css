@@ -20,7 +20,44 @@ body{
     position : absolute;
     top: 4.6%;
     left: 7.7%;
+   
 }
+.img-set{
+   width: 100%;
+   height: 100%;
+   border-radius: 20px;
+   position: absolute;
+   top : 0%;
+   left : 0%;
+}
+.overlay {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   height: 100%;
+   width: 100%;
+   border-radius: 20px;
+   opacity: 0;
+   transition: .3s ease;
+   background-color: hsl(178, 100%, 50%);
+ }
+ 
+ .img:hover .overlay {
+   opacity: 0.4;
+ }
+ .icon {
+   color: white;
+   font-size: 100px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   opacity: 1;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+   text-align: center;
+ }
 .text1
 {
    color :hsl(0, 0%, 100%);
@@ -30,6 +67,9 @@ body{
    font-family: 'Outfit', sans-serif;
    size: 18px;
    font-weight: 600;
+}
+.text1:hover{
+   color: hsl(178, 100%, 50%);
 }
 .text2
 {
@@ -100,7 +140,9 @@ body{
    position: absolute;
    top: 90.7%;
    left: 5%;
-   border: 109x hsl(0, 0%, 100%);
+   border: 2px solid white;
+   border-radius: 50%;
+
 }
 .text6
 {
@@ -111,10 +153,28 @@ body{
    font-family: 'Outfit', sans-serif;
    size: 18px;
    font-weight: 400;
+   
+}
+.text6:hover{
+      color: hsl(178, 100%, 50%);
 }
 .attribution
 {
     display: none;
     position: absolute;
     bottom: 0%;
+}
+
+@media only screen and (min-width: 1000px){
+   .rect
+{
+    width: 22.8%;
+    height: 65.6%;
+    border-radius: 20px;
+    background-color: hsl(216, 50%, 16%);
+    position: absolute;
+    top : 17%;
+    left: 38%;
+}
+    
 }
